@@ -7,7 +7,7 @@
 	$username ="Saikan";
 	$password ="1234";
 	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
-		header("Location: home.php");
+		header("Location: booking.html");
 	}
 	if(isset($_POST['username']) && isset($_POST)){
 		if($_POST['username'] == $username && $_POST['password'] == $password)
@@ -129,7 +129,7 @@ h1{
 <div class="loginbox"  >
 <img src="avatar.png" class="avatar">
         <h1 align="center">Login Here</h1>
-		<form method="post" action="login.php">
+		<form method="post" action="login.html">
 			Username<br/>
 			<input type="text" name="username"><br/>
 			Password<br/>
